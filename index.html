@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- links -->
+    <script
+      src="https://kit.fontawesome.com/9589b620b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+1+Code:wght@100;300;400;500;700&family=Sofia+Sans+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptacion</title>
+  </head>
+  <body>
+    <h2 class="title">alura</h2>
+
+    <main id="container">
+      <section class="container-text">
+        <div class="text__input">
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="ingrese un texto aqui"
+          ></textarea>
+        </div>
+        <div class="text__button">
+          <p>
+            <i class="fa-solid fa-circle-info"></i>
+            solo letras minusculas y sin acento
+          </p>
+          <div class="button__cont">
+            <button id="buttonencriptar">Encriptar</button>
+            <button id="buttondesencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-2">
+        <div class="container-noresp">
+          <div class="container-warn">
+            <div class="marioneta">
+              <img src="assets/img/marioneta.svg" alt="img12" />
+            </div>
+            <p class="noresp__text">Ningun mensaje fue encontrado</p>
+            <p class="noresp__text2">
+              Ingresa el texto que desees encriptar o desencriptar
+            </p>
+          </div>
+        </div>
+
+        <div class="container-resp">
+          <div class="resp__parrafo">
+            <p class="respuesta" id="resultado"></p>
+          </div>
+          <div>
+            <button id="buttoncopiar" class="resp__button">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <div class="container-foo">
+        <p class="foo-title">Mis redes sociales:</p>
+
+        <div>
+          <ul class="social-links">
+            <li class="foo-item">
+              <a href="https://github.com/AntonyJr00" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="foo-item">
+              <a
+                href="https://www.linkedin.com/in/antony-rodr%C3%ADguez-lucas-012325254"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="foo-name">&copy; 2023 - Antony Rodriguez Lucas</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/encriptador.js"></script>
+  </body>
+</html>
